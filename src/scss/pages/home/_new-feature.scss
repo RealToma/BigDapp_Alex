@@ -1,0 +1,39 @@
+.new-feature {
+	margin-top: $size-x2;
+
+	&__box {
+		position: relative;
+		padding: $size-x6 $size-x2;
+		border-radius: 10px;
+		border: 1px solid $green;
+		background-image: url('../../../assets/images/pages/home/collect_form_mobile.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		z-index: 1;
+
+		@include respond(phone) {
+            padding: $size-x6;
+			background-image: url('../../../assets/images/pages/home/collect_form_desktop.svg');
+		}
+
+		&__txt {
+			font-size: $font-size-20;
+			font-weight: 800;
+			text-transform: uppercase;
+			font-style: italic;
+
+			@include respond(phone) {
+				font-size: $font-size-34;
+			}
+		}
+	}
+
+	@include respond(phone_large) {
+		padding-right: 15px;
+	}
+
+	@media (min-width: 1140px) {
+		padding-right: 0;
+	}
+}

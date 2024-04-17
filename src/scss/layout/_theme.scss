@@ -1,0 +1,35 @@
+.theme-dark {
+	--text-color: #fff;
+	--text-color-rgb: 255, 255, 255;
+	--background-color: #070618;
+	--background-color-rgb: 7, 6, 24;
+	--layout-bg-shape: rgba(7, 6, 24, 1);
+	--common-border-color-rgb: 255, 255, 255, 0.2;
+	--common-bg-color-rgb: 255, 255, 255, 0.1;
+	--header-bg: 'transparent';
+	--accent-yellow: #f1e26e;
+	--accent-green: #99ffcc;
+	--bg-mode-1: 255, 255, 255, 0.1;
+	--switch-border: 255, 255, 255, 0.1;
+	--switch-bg: 255, 255, 255, 0.05;
+	--settings-color: #8cffcc;
+	--swapper-info-color: 255, 255, 255, 0.5;
+}
+
+.theme-light {
+	--text-color: #070618;
+	--text-color-rgb: 7, 6, 24;
+	--background-color: #fff;
+	--background-color-rgb: 255, 255, 255;
+	--layout-bg-shape: rgba(83, 174, 148, 0.2);
+	--common-border-color-rgb: 7, 6, 24, 0.2;
+	--common-bg-color-rgb: 7, 6, 24, 0.1;
+	--header-bg: #070618;
+	--accent-yellow: #070618;
+	--accent-green: #070618;
+	--bg-mode-1: 7, 6, 24, 1;
+	--switch-border: 7, 6, 24, 0.05;
+	--switch-bg: 7, 6, 24, 0.05;
+	--settings-color: #070618;
+	--swapper-info-color: 7, 6, 24, 1;
+}

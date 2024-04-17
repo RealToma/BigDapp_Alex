@@ -1,0 +1,40 @@
+.v1alpha {
+	margin-top: $size-x2;
+
+	&__box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: $size-x6 $size-x2;
+		border-radius: 10px;
+		background-color: $violet;
+		background-image: url('../../../assets/images/pages/home/v1_alpha.svg');
+		background-repeat: no-repeat;
+		background-position: 91% 50%;
+		background-size: 140px;
+		z-index: 0;
+
+		&__txt {
+			font-size: $font-size-20;
+			font-weight: 800;
+			text-transform: uppercase;
+			font-style: italic;
+		}
+
+		@include respond(phone) {
+			height: 330px;
+			@include flex-center(flex-start, flex-start, column);
+			padding: $size-x3 $size-x6;
+			background-size: 180px;
+			background-position: 100% 95%;
+
+			&__txt {
+				font-size: $font-size-34;
+			}
+		}
+	}
+
+	@include respond(phone_large) {
+		margin-top: $size;
+	}
+}

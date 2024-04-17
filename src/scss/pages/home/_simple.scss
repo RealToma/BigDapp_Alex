@@ -1,0 +1,33 @@
+.home__simple {
+	margin-top: $size;
+
+	&__box {
+		position: relative;
+		padding: $size-x2;
+		border-radius: 10px;
+		background-color: $yellow;
+		background-image: url('../../../assets/images/pages/home/form_wizard.svg');
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		background-size: 110px;
+		z-index: 1;
+
+		&__txt {
+			font-size: $font-size-20;
+			font-weight: 800;
+			text-transform: uppercase;
+			font-style: italic;
+		}
+
+		@include respond(phone) {
+			height: 330px;
+			@include flex-center(flex-start, flex-start, column);
+			padding: $size-x3 $size-x6;
+			background-position: 95% 90%;
+
+			&__txt {
+				font-size: $font-size-34;
+			}
+		}
+	}
+}

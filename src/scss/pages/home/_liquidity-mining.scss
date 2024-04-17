@@ -1,0 +1,121 @@
+.liquidity-mining {
+	&__box {
+		position: relative;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		column-gap: $size;
+		padding: $size-x3 $size-x3 $size-x4 $size-x3;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		background-image: url('../../../assets/images/pages/home/liquidity_mining_event_mobile.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: 1;
+
+		@include respond(phone) {
+			background-image: url('../../../assets/images/pages/home/liquidity_mining_event_desktop.svg');
+		}
+
+		@include respond(tablet) {
+			padding: $size-x3 $size-x3 0 $size-x3;
+		}
+
+		&__col {
+			@include flex-center(flex-start, center, column);
+
+			&:nth-of-type(2) {
+				align-items: flex-start;
+				order: -1;
+
+				@include respond(phone) {
+					align-items: center;
+					justify-content: center;
+					order: unset;
+				}
+			}
+
+			&__img {
+				width: auto;
+				max-height: 180px;
+
+				@include respond(tablet) {
+					width: unset;
+					max-height: unset;
+				}
+			}
+
+			@include respond(tablet) {
+				align-items: center;
+			}
+
+			&__description {
+				font-size: $font-size-18;
+				font-weight: 800;
+				text-transform: uppercase;
+				font-style: italic;
+				text-align: center;
+				color: $white;
+				margin-top: auto;
+
+				@include respond(tablet) {
+					position: relative;
+					top: -40px;
+					font-size: $font-size-28;
+				}
+			}
+		}
+
+		&__txt {
+			font-size: $font-size-34;
+			font-weight: 800;
+			text-transform: uppercase;
+			font-style: italic;
+			line-height: $line-height-base;
+
+			&--1 {
+				margin-bottom: 5px;
+				color: $dark;
+
+				@include respond(tablet) {
+					font-size: $font-size-50;
+				}
+			}
+
+			&--2 {
+				font-size: $font-size-30;
+				margin-bottom: $size-x3;
+
+				@include respond(tablet) {
+					font-size: $font-size-50;
+					margin-bottom: 0;
+				}
+			}
+
+			@include respond(phone) {
+				text-align: center;
+			}
+		}
+
+		&__btn {
+			margin-top: auto;
+			margin-bottom: 2px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
+
+			@include respond(phone_large) {
+				margin-top: $size-x3;
+			}
+		}
+	}
+
+	@include respond(tablet) {
+		padding-right: 15px;
+	}
+
+	@media (min-width: 1140px) {
+		padding-right: 0;
+	}
+}

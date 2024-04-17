@@ -1,0 +1,42 @@
+.swap {
+	position: relative;
+	margin-top: $size;
+
+	&__box {
+		max-width: 540px;
+		margin: 0 auto;
+		padding-top: $size-x4;
+
+		&__container {
+			border: 1px solid var(--text-color);
+			border-radius: 10px;
+			background-color: var(--background-color);
+			overflow: hidden;
+		}
+	}
+
+	&__switch {
+		padding: 1px;
+
+		&__bg {
+			@include flex-center;
+			border-radius: 10px;
+			border: 1px solid rgba(var(--switch-border));
+			background-color: rgba(var(--switch-bg));
+		}
+
+		&__btn {
+			font-weight: 700;
+			text-decoration: none;
+			padding: 25px;
+			border-radius: 7px;
+			width: 100%;
+			color: var(--text-color);
+
+			&--active {
+				background-color: var(--text-color);
+				color: var(--background-color);
+			}
+		}
+	}
+}
